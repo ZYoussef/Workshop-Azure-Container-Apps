@@ -4,20 +4,18 @@ on:
   workflow_dispatch:
 
 env:
-  RESOURCE_GROUP: "RG-Lab3"
+    RESOURCE_GROUP: "RG-Lab3-ayz"
   LOCATION: "eastus2"
   CONTAINERAPPS_ENVIRONMENT: "environment-lab-3"
-  LOG_ANALYTICS_NAME: "pierrc-workspace-lab-3"
-  ACR_NAME: "acrlab3xxx"
+  LOG_ANALYTICS_NAME: "worksppace-lab1-ayz"
+  ACR_NAME: "ayzacr2023"
   ##################################################################################################################################################################################
   # Nous sommes dans un Workshop !                                                                                                                                                 #
   # Dans les bonnes pratiques, toutes la informations liées à la base de données sont à mettre dans un service pour stocker les secrets (ex: service secrets GitHub, KeyVault, ...)#
   DB_HOST_NAME: "DB-lab-3-xxx"                                                                                                                                                     #
   DB_NAME: "rugby_api" # ne pas modifier                                                                                                                                           #
-  DB_ADMIN: "pierrc"                                                                                                                                                               #
-  DB_ADMIN_PASSWORD: Password123$                                                                                                                                                  #
-  ##################################################################################################################################################################################
-
+  DB_ADMIN: "ayziyyat"                                                                                                                                                               #
+  DB_ADMIN_PASSWORD: Password123$  
 jobs:
   Deployment-environnment:
     runs-on: ubuntu-latest
